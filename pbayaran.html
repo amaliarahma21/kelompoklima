@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <title>
+        TRIO UBUR UBUR
+    </title>
+    <link rel="stylesheet" href="pbarang.css">
+</head>
+
+<body>
+
+	<h1><center>PENJUALAN PEMBAYARAN</center></h1>
+    <P><a href="ptransaksi.html" class="tbl-biru">NEXT</a></P>
+	<hr>
+			<div class="employee-form">
+                <form onsubmit="event.preventDefault();onFormSubmit();" autocomplete="off">
+                    <div>
+                        <label>id_pembayaran</label><label class="validation-error hide" id="pembayaranValidationError">This field is required.</label>
+                        <input type="text" name="pembayaran" id="pembayaran">
+                    </div>
+                    <div>
+                        <label>tgl_bayar</label>
+                        <input type="text" name="tgl" id="tgl">
+                    </div>
+                    <div>
+                        <label>total_bayar</label>
+                        <input type="text" name="ttl" id="ttl">
+                    </div>
+                    <div>
+                        <label>id_transaksi</label>
+                        <input type="text" name="tr" id="tr">
+                    </div>
+                    <div  class="form-action-buttons">
+                        <input type="submit" value="Submit">
+                    </div>
+                </form>
+		</div>
+		<br/>
+		<div class = "employees-table">
+                <table class="list" id="employeeList">
+                    <thead>
+                        <tr>
+                            <th>id_pembayaran</th>
+                            <th>tgl_bayar</th>
+                            <th>total_bayar</th>
+                            <th>id_transaksi</th>
+                            <th>EDIT</th>
+                        </tr>
+                    </thead>
+                    <tbody>
+
+                    </tbody>
+                </table>
+        </div>
+    <script src="pbayaran.js"></script>
+
+    <input type="text" name="pembayaran" id="pembayaran">
+<input type="text" name="tgl" id="tgl">
+<input type="text" name="ttl" id="ttl">
+<input type="text" name="tr" id="tr">
+</body>
+</html>

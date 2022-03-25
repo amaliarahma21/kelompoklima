@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <title>
+        TRIO UBUR UBUR
+    </title>
+    <link rel="stylesheet" href="pbarang.css">
+</head>
+
+<body>
+
+	<h1><center>PENJUALAN SUPPLIER</center></h1>
+    <P><a href="ppembeli.html" class="tbl-biru">NEXT</a></P>
+	<hr>
+			<div class="employee-form">
+                <form onsubmit="event.preventDefault();onFormSubmit();" autocomplete="off">
+                    <div>
+                        <label>id_supplier</label><label class="validation-error hide" id="supplierValidationError">This field is required.</label>
+                        <input type="text" name="supplier" id="supplier">
+                    </div>
+                    <div>
+                        <label>nama_supplier</label>
+                        <input type="text" name="nama" id="nama">
+                    </div>
+                    <div>
+                        <label>no_telp</label>
+                        <input type="text" name="telp" id="telp">
+                    </div>
+                    <div>
+                        <label>alamat</label>
+                        <input type="text" name="almt" id="almt">
+                    </div>
+                    <div  class="form-action-buttons">
+                        <input type="submit" value="Submit">
+                    </div>
+                </form>
+		</div>
+		<br/>
+		<div class = "employees-table">
+                <table class="list" id="employeeList">
+                    <thead>
+                        <tr>
+                            <th>id_supplier</th>
+                            <th>nama_supplier</th>
+                            <th>no_telp</th>
+                            <th>alamat</th>
+                            <th>EDIT</th>
+                        </tr>
+                    </thead>
+                    <tbody>
+
+                    </tbody>
+                </table>
+        </div>
+    <script src="psupplier.js"></script>
+
+    <input type="text" name="supplier" id="supplier">
+<input type="text" name="nama" id="nama">
+<input type="text" name="telp" id="telp">
+<input type="text" name="almt" id="almt">
+</body>
+</html>

@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <title>
+       TRIO UBUR UBUR
+    </title>
+    <link rel="stylesheet" href="pbarang.css">
+</head>
+
+<body>
+
+	<h1><center>PENJUALAN TRANSAKSI</center></h1>
+    <P><a href="3ubur.html" class="tbl-biru">NEXT</a></P>
+	<hr>
+			<div class="employee-form">
+                <form onsubmit="event.preventDefault();onFormSubmit();" autocomplete="off">
+                    <div>
+                        <label>id_transaksi</label><label class="validation-error hide" id="transaksiValidationError">This field is required.</label>
+                        <input type="text" name="transaksi" id="transaksi">
+                    </div>
+                    <div>
+                        <label>id_barang</label>
+                        <input type="text" name="brg" id="brg">
+                    </div>
+                    <div>
+                        <label>id_pembeli</label>
+                        <input type="text" name="pembeli" id="pembeli">
+                    </div>
+                    <div>
+                        <label>tanggal</label>
+                        <input type="text" name="tgl" id="tgl">
+                    </div>
+                    <div>
+                        <label>keterangan</label>
+                        <input type="text" name="ket" id="ket">
+                    </div>
+                    <div  class="form-action-buttons">
+                        <input type="submit" value="Submit">
+                    </div>
+                </form>
+		</div>
+		<br/>
+		<div class = "employees-table">
+                <table class="list" id="employeeList">
+                    <thead>
+                        <tr>
+                            <th>id_transaksi</th>
+                            <th>id_barang</th>
+                            <th>id_pembeli</th>
+                            <th>tanggal</th>
+                            <th>keterangan</th>
+                            <th>EDIT</th>
+                        </tr>
+                    </thead>
+                    <tbody>
+
+                    </tbody>
+                </table>
+        </div>
+    <script src="ptransaksi.js"></script>
+</body>
+<input type="text" name="transaksi" id="transaksi">
+<input type="text" name="brg" id="brg">
+<input type="text" name="pembeli" id="pembeli">
+<input type="text" name="tgl" id="tgl">
+<input type="text" name="ket" id="ket">
+</html>

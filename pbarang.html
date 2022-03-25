@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <title>
+       TRIO UBUR UBUR
+    </title>
+    <link rel="stylesheet" href="pbarang.css">
+</head>
+
+<body>
+
+	<h1><center>PENJUALAN BARANG</center></h1>
+    <body>
+        <P><a href="psupplier.html" class="tbl-biru">NEXT</a></P>
+    </body>
+	<hr>
+			<div class="employee-form">
+                <form onsubmit="event.preventDefault();onFormSubmit();" autocomplete="off">
+                    <div>
+                        <label>id_barang</label><label class="validation-error hide" id="barangValidationError">This field is required.</label>
+                        <input type="text" name="barang" id="barang">
+                    </div>
+                    <div>
+                        <label>nama_barang</label>
+                        <input type="text" name="nama" id="nama">
+                    </div>
+                    <div>
+                        <label>harga</label>
+                        <input type="text" name="harga" id="harga">
+                    </div>
+                    <div>
+                        <label>stok</label>
+                        <input type="text" name="stok" id="stok">
+                    </div>
+                    <div>
+                        <label>id_supplier</label>
+                        <input type="text" name="sp" id="sp">
+                    </div>
+                    <div  class="form-action-buttons">
+                        <input type="submit" value="Submit">
+                    </div>
+                </form>
+		</div>
+		<br/>
+		<div class = "employees-table">
+                <table class="list" id="employeeList">
+                    <thead>
+                        <tr>
+                            <th>id_barang</th>
+                            <th>nama_barang</th>
+                            <th>harga</th>
+                            <th>stok</th>
+                            <th>id_supplier</th>
+                            <th>EDIT</th>
+                        </tr>
+                    </thead>
+                    <tbody>
+
+                    </tbody>
+                </table>
+        </div>
+    <script src="pbarang.js"></script>
+</body>
+<input type="text" name="barang" id="barang">
+<input type="text" name="nama" id="nama">
+<input type="text" name="harga" id="harga">
+<input type="text" name="stok" id="stok">
+<input type="text" name="sp" id="sp">
+
+</html>
